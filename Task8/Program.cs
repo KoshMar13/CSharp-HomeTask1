@@ -7,12 +7,19 @@ Console.Write("Insert number: ");
 int numb = Convert.ToInt32(Console.ReadLine());
 int count = 2;
 
-var numbers = new List<int>();
+// var numbers = new List<int>();
+// while(count <= numb)
+// {
+//     numbers.Add(count);
+//     count += 2;
+// }
+
+// var answer = string.Join(", ", numbers);
+// Console.WriteLine(answer);
+
 while(count <= numb)
 {
-    numbers.Add(count);
+    Console.Write($"{count}, ");
     count += 2;
 }
-
-var answer = string.Join(", ", numbers);
-Console.WriteLine(answer);
+//Как удалить запятую после последнего числа - пока что не знаю.
