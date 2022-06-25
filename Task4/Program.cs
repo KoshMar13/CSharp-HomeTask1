@@ -11,6 +11,17 @@ int numb2 = Convert.ToInt32(Console.ReadLine());
 Console.Write("Insert third number: ");
 int numb3 = Convert.ToInt32(Console.ReadLine());
 
-int[] numbers = {numb1, numb2, numb3};
-int maxVal = numbers.Max();
-Console.WriteLine($"Maximum = {maxVal}");
+// int[] numbers = {numb1, numb2, numb3};
+// int maxVal = numbers.Max();
+// Console.WriteLine($"Maximum = {maxVal}");
+
+int maximum = numb1;
+if(maximum < numb2)
+{
+    maximum = numb2;
+}
+if(maximum < numb3)
+{
+    maximum = numb3;
+}
+Console.WriteLine($"max = {maximum}");
